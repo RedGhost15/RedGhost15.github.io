@@ -1,0 +1,996 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sixtyfour+Convergence&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sixtyfour&family=Sixtyfour+Convergence&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sixtyfour Convergence", sans-serif;
+    color: white;
+}
+html {
+    scroll-behavior: smooth;
+}
+a {
+    text-decoration: none;
+}
+body {
+    height: 100vh;
+    width: 100%;
+}
+main {
+    text-align: center;
+    padding: 30px;
+}
+video {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+/* -----------------------------------------------TEXT---------- */
+/* ---HeaderText--- */
+.header-navi a {
+    text-decoration: none;
+    transition: all text 0.5s ease-in-out;
+}
+.header-links a:hover {
+    text-decoration: none;
+    font-family: "Sixtyfour", sans-serif;
+}
+.header-navi span {
+    font-family: "Sixtyfour", sans-serif;
+    font-size: 40px;
+}
+.logo a {
+    font-size: 40px;
+}
+/* ---MainText--- ---GLITCH--- */
+.home-main p {
+    font-size: 30px;
+}
+.home-main div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.home-main div p {
+    max-width: 500px;
+    font-size: 15px;
+    padding-top: 50px;
+}
+.warning{
+    padding-top: 30px;
+    font-size: 50px;
+    font-family: "Sixtyfour", sans-serif;
+    text-decoration: underline;
+}
+.home-main p span:first-child {
+    font-family: "Sixtyfour", sans-serif;
+}
+.home-main p span:last-child {
+    text-transform: uppercase;
+}
+.home-main h1 {
+    text-align: center;
+    font-size: 100px;
+    width: 100%;
+    padding-top: 100px;
+    animation: glitch 3s linear infinite;
+}
+.home-main-title span {
+    font-family: "Sixtyfour", sans-serif;
+}
+/* ---AboutText--- */
+.home-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.home-about h2,.home-skills h2, .home-projects h2 {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 80px;
+}
+.home-about h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: "Sixtyfour", sans-serif;
+}
+.home-about-left h2 {
+    padding-top: 10px;
+}
+.home-about-right p{
+    text-align: left;
+    width: 800px;
+    height: 600px;
+    overflow: scroll;
+    border: 3px solid rgb(202, 71, 71);
+    padding: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transition: font-size 0.3s ease, font-family 0.3s ease, color 0.3s ease;
+}
+.comments li{
+    letter-spacing: 1px;
+    margin-top: 40px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project-text .about-text-div p {
+    transition: font-size 0.3s ease, font-family 0.3s ease, color 0.3s ease;
+}
+.project-text p{
+    height: 300px;
+}
+footer div:nth-child(3) h2 {
+    padding-bottom: 20px;
+}
+/* -----------------------------------------------HEADER SECTION--- */
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    background-color: #040200;
+    padding: 0px 100px 0px 100px;
+}
+.header-navi{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-links {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 50px;
+}
+.logo{
+    padding: 10px 20px 10px;
+}
+.header-hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+
+/* -----------------------------------------------Home---------- */
+.home-main{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+.home-main button{
+    margin-top: 100px;
+    font-size: 30px;
+    padding: 20px 10px 10px 20px;
+    border: 2px solid rgb(255, 43, 43);
+    background-color: white;
+    transition: all 0.1s ease-in-out;
+}
+.home-main button:hover{
+    border: 2px solid white;
+    background-color: rgb(255, 43, 43);
+    font-family: "Sixtyfour", sans-serif;
+    box-shadow: 0px 0px 75px 5px red;
+}
+
+/* -----------------------------------------------About---------- */
+.home-about {
+    height: 100vh;
+}
+.description{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-text-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.home-about-right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.home-about-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgb(202, 71, 71);
+    padding: 10px;
+    height: 600px;
+    margin-top: 25px;
+    width: 800px;
+}
+.home-about-left button {
+    margin-top: 50px;
+    font-size: 30px;
+    padding: 20px 10px 10px 20px;
+    border-radius: 0px;
+    ;
+    background-color: white;
+    transition: all 0.1s ease-in-out;
+}
+.home-about-left button:hover{
+    text-align: center;
+    border: 2px solid white;
+    background-color: rgb(255, 43, 43);
+    font-family: "Sixtyfour", sans-serif;
+    box-shadow: 0px 0px 75px 5px red;
+}
+.about-me-extra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: left;
+    padding-top: 20px;
+}
+.extra-text{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+/* text switch btn */
+.easy-read{
+    padding: 5px;
+    border: 2px solid rgb(255, 43, 43);
+    background-color: white;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+}
+.easy-read-inactive{
+    padding: 5px;
+    border: 2px solid rgb(255, 43, 43);
+    background-color: white;
+    transition: all 0.1s ease-in-out;
+}
+.easy-read:hover, .easy-read:active, .easy-read:focus{
+    text-align: center;
+    border: 2px solid white;
+    background-color: rgb(255, 43, 43);
+    font-family: "Sixtyfour", sans-serif;
+    box-shadow: 0px 0px 75px 5px red;
+}
+.easy-read-active {
+    font-family: "Roboto", sans-serif;
+    font-size: 30px;
+    height: auto;
+}
+/* --- Pic Glitch --- */
+.about-me-extra img {
+    width: 30%;
+    animation: glitch 3s linear infinite;
+    border-radius: 20px;
+}
+/* -------------------------------------------------Skills--------------- */
+.home-skills {
+    height: 100vh;
+    margin-top: 30px;
+}
+.skills{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.experienceDiv{
+    display: flex;
+    width: 300px;
+    padding: 50px 0;
+    border-radius: 10px;
+    row-gap: 30px;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.circular-progress{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    background-color: red;
+    border-radius: 50%;
+    background: conic-gradient(rgb(199, 83, 83) 3.6deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circular-progress::before{
+    content: "";
+    position: absolute;
+    height: 210px;
+    width: 210px;
+    border-radius: 50%;
+    background: black;
+}
+.progress-value{
+    position: relative;
+}
+.progress-img{
+    position: relative;
+    width: 100px;
+    z-index: 100;
+    animation: glitch 3s linear infinite;
+}
+/* --------------------------------------PROJECTS------------------------------ */
+.home-projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.projectsDiv{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    position: relative;
+}
+.projectLeft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100vh;
+}
+.project-text .about-text-div {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.screenDivCarousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.projectRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 70vh;
+}
+.projectData{
+    height: 60vh;
+    width: 800px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 40px;
+    padding-bottom: 30px;
+}
+.projectData div{
+    width: 100%;
+    text-align: left;
+}
+.project-text{
+
+    border: 2px solid red;
+    padding: 20px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sliderImg{
+    width: 41%;
+    animation: glitch 3s linear infinite;
+}
+.slideshow-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+.frameImg{
+    position: relative;
+    z-index: 1;
+}
+.prev, .next {
+    cursor: pointer;
+    top: 30px;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 35px;
+    transition: 0.6s ease;
+    user-select: none;
+    position: relative;
+    z-index: 10;
+    left: 15px;
+    top: 15px;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.gitDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+.gitDiv button{
+    margin: 0px;
+    font-size: 30px;
+    padding: 20px 10px 10px 20px;
+    border: 2px solid rgb(255, 43, 43);
+    background-color: white;
+    transition: all 0.1s ease-in-out;
+}
+.gitDiv button:hover{
+    border: 2px solid white;
+    background-color: rgb(255, 43, 43);
+
+    box-shadow: 0px 0px 75px 5px red;
+}
+.gitDiv a {
+    text-decoration: none;
+}
+/* --------------FOOTER---------------- */
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgba(128, 128, 128, 0.144);
+}
+footer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    height: 100%;
+}
+footer div:nth-child(1) {
+    max-width: 300px;
+}
+footer div:nth-child(2) a:hover{
+    font-family: "Sixtyfour", sans-serif;
+}
+footer div:nth-child(3) {
+    text-align: center;
+}
+footer div:nth-child(3) div{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+footer div:nth-child(3) div div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer div:nth-child(3) div img {
+    width: 40%;
+    transition: all 0.2s ease-in-out;
+}
+footer div:nth-child(3) div img:hover {
+    width: 50%;
+}
+.footerMessageDiv span {
+    font-family: "Sixtyfour", sans-serif;;
+}
+
+/* -----------------------------------------------Keyframes---------- */
+/* ---NON HOVER--- */
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+@keyframes glitch{
+    2%,64%{
+    transform: translate(2px,0) skew(0deg);
+    }
+    4%,60%{
+    transform: translate(-2px,0) skew(0deg);
+    }
+    62%{
+    transform: translate(0,0) skew(5deg); 
+    }
+}
+.profileImg::before, .profilePic:after, .home-main h1::before, .home-main h1:after,
+.progress-img::before, .progress-img::after, .sliderImg::before, .sliderImg::after{
+    content: attr(title);
+    position: absolute;
+    left: 0;
+}
+.profileImg:before, .home-main h1::before, .progress-img::before, .sliderImg::before{
+    animation: glitchTop 3s linear infinite;
+    clip-path: polygon(0 17%, 100% 0, 100% 33%, 0 33%);
+    -webkit-clip-path: polygon(0 57%, 100% 0, 100% 33%, 0 33%);
+}
+@keyframes glitchTop{
+    2%,64%{
+    transform: translate(2px,-5px);
+    }
+    4%,60%{
+    transform: translate(-2px,2px);
+    }
+    62%{
+    transform: translate(13px,-5px) skew(-13deg); 
+    }
+}
+.profileImg:after, .home-main h1:after, .progress-img::after, .sliderImg::after{
+    animation: glitchBotom 2s linear infinite;
+    clip-path: polygon(0 87%, 100% 67%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+}
+@keyframes glitchBotom{
+    2%,64%{
+    transform: translate(-5px,0);
+    }
+    4%,60%{
+    transform: translate(-2px,0);
+    }
+    62%{
+    transform: translate(-22px,5px) skew(58deg); 
+    }
+}
+/* ---Hover--- */
+
+@keyframes glitch-test {
+    0% {
+    clip: rect(-3px, 600px, 0px, 0px);
+    }
+    5.88235% {
+    clip: rect(0px, 600px, 0px, 0px);
+    }
+    11.76471% {
+    clip: rect(-3px, 600px, 0px, 0px);
+    }
+    17.64706% {
+    clip: rect(-3px, 600px, 0px, 0px);
+    }
+    23.52941% {
+    clip: rect(100px, 600px, 100px, 0px);
+    }
+    29.41176% {
+    clip: rect(0px, 600px, 600px, 0px);
+    }
+    35.29412% {
+    clip: rect(100px, 600px, 0px, 0px);
+    }
+    41.17647% {
+    clip: rect(0px, 600px, 600px, 0px);
+    }
+    47.05882% {
+    clip: rect(100px, 600px, 0px, 0px);
+    }
+    52.94118% {
+    clip: rect(-3px, 600px, 0px, 0px);
+    }
+    58.82353% {
+    clip: rect(100px, 450px,100px, 0px);
+    }
+    64.70588% {
+    clip: rect(0px, 450px, 0px, 0px);
+    }
+    70.58824% {
+    clip: rect(100px, 450px, 100px, 0px);
+    }
+    76.47059% {
+    clip: rect(0px, 450px, 0px, 0px);
+    }
+    82.35294% {
+    clip: rect(0px, 450px, 0px, 0px);
+    }
+    88.23529% {
+    clip: rect(0px, 450px, 0px, 0px);
+    }
+    94.11765% {
+    clip: rect(0px, 450px, 0px, 0px);
+    }
+    100% {
+    clip: rect(0px, 450px, 0px, 0px);
+    }
+}
+
+/* -------BTN GLITCH------- */
+.exploreBtn, .downloadBtn, .gitButton {
+    display: block;
+    position: relative;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 8px 30px;
+    font-size: .75em;
+    letter-spacing: .35em;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid hsla(0,0%,100%,.2);
+    transition: all .3s ease;
+    margin: 0 auto;
+
+
+    &:before, 
+    &:after {
+    content: 'EXPLORE';
+    position: absolute;
+        top: 0;
+        left: 0;
+    padding: 8px 0;
+    width: 100%;
+    -webkit-clip: rect(0px, 0px, 0px, 0px);
+    clip: rect(0px, 0px, 0px, 0px);
+    background: #fff;
+    color: #000;
+    }
+    
+    &:before {
+    left: -3px;
+    top: -2px;
+    text-shadow: 2px 0 #fff;
+    box-shadow: 2px 0 #fff;
+    }
+    &:after {
+    left: 2px;
+    bottom: -2px;
+    text-shadow: -1px 0 #fff;
+    box-shadow: -1px 0 #fff;
+    }
+
+    &:hover {
+    background: white;
+    color: black;
+    }
+
+    &:hover:before {
+        animation: glitch-test 1.5s infinite linear alternate-reverse;
+    }
+    
+    &:hover:after {
+        animation: glitch-test 2s infinite linear alternate;
+    }
+}
+
+.downloadBtn {
+    &:before, 
+    &:after {
+    content: 'DOWNLOAD';
+    position: absolute;
+        top: 0;
+        left: 0;
+    padding: 8px 0;
+    width: 100%;
+    -webkit-clip: rect(0px, 0px, 0px, 0px);
+    clip: rect(0px, 0px, 0px, 0px);
+    background: #fff;
+    color: #000;
+    }
+}
+.gitButton {
+    &:before, 
+    &:after {
+    content: 'GIT REPO';
+    position: absolute;
+        top: 0;
+        left: 0;
+    padding: 8px 0;
+    width: 100%;
+    -webkit-clip: rect(0px, 0px, 0px, 0px);
+    clip: rect(0px, 0px, 0px, 0px);
+    background: #fff;
+    color: #000;
+    }
+}
+
+/* -------------------------------------------------------Media Q */
+
+@media (max-width: 769px) {
+    header{
+        display: none;
+    }
+    video{
+        display: none;
+    }
+    body {
+        background-color: #000
+    };
+    button {
+        animation: glitch 1s linear infinite;
+    }
+    /* main */
+    .home-main {
+        justify-content: flex-start;
+        margin: 150px 0px 100px 0px;
+        height: 70vh;
+    }
+    .home-main button {
+        animation: glitch 1s linear infinite;
+    }
+    .home-main div {
+        flex-direction: column;
+        text-align: center;
+        animation: glitch 3s linear infinite;
+    }
+    .home-main h1{
+        font-size: 60px;
+    }
+    .home-main p {
+        font-size: 20px;
+    }
+    /* about */
+    .home-about{
+        margin-bottom: 100px;
+        height: 90vh;
+    }
+    .description{
+        flex-direction: column;
+    }
+    .home-about-left {
+        height: 400;
+        width: 600;
+        border: none;
+        margin: 0px;
+    }
+    .home-about-left button {
+        font-size: 20px;
+    }
+    .about-me-extra img {
+        width: 20%;
+        animation: glitch 3s linear infinite;
+        border-radius: 20px;
+    }
+    .about-text-div p {
+        width: auto;
+        height: 300px;
+    }
+    /* SKILLS */
+    .skills {
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-bottom: 200px;
+    }
+    .experienceDiv {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 30px;
+        width: 90%;
+    }
+    .experienceDiv div:nth-child(2) {
+        min-width: 150px;
+    }
+    .progress-img{
+        width: 50px;
+    }
+    .circular-progress {
+        height: 200px;
+        width: 200px;
+    }
+    .circular-progress::before{
+        height: 160px;
+        width: 160px;
+    }
+    .comments{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .comments li{
+        font-size: 20px;
+        letter-spacing: normal;
+        margin-top: 10px;
+        width: 220px;
+        text-align: center;
+        font-family: "Sixtyfour";
+    }
+    /* PROJECTS */
+    .home-projects{
+        margin-top: 500px;
+    }
+    .projectsDiv {
+        height: auto;
+        position: unset;
+        flex-direction: column;
+    }
+    .projectLeft{
+        height: auto;
+        width: auto;
+    }
+    .projectRight{
+        width: auto;
+        height: auto;
+    }
+    .projectData{
+        height: auto;
+        width: auto;
+    }
+    .projectData div {
+        text-align: center;
+        font-size: 20px;
+    }
+    .frameImg {
+        display: none;
+    }
+    .sliderImg {
+        width: auto;
+        height: 450px;
+    }
+    .slideshow-container{
+        position: unset;
+        height: auto;
+        padding-top: 30px;
+    }
+    .prev, .next {
+        position: unset;
+    }
+    footer{
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 50px;
+    }
+    footer div {
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .footerMessageDiv {
+        width: 100%;
+        text-align: center;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    header{
+        display: none;
+    }
+    video{
+        display: none;
+    }
+    body {
+        background-color: #000
+    };
+    button {
+        animation: glitch 1s linear infinite;
+    }
+    /* main */
+    .home-main {
+        justify-content: center;
+        margin: 0px;
+        height: 100vh;
+        margin-bottom: 50px;
+    }
+    .home-main button {
+        animation: glitch 1s linear infinite;
+    }
+    .home-main h1{
+        font-size: 30px;
+    }
+    .home-main p {
+        font-size: 15px;
+    }
+    /* about */
+    .home-about{
+        margin-bottom: 100px;
+        height: 100vh;
+        margin-top: 50px;
+    }
+    .home-about h2 {
+        font-size: 30px;
+    }
+    .home-about-left {
+        height: auto;
+        width: auto;
+        border: none;
+        margin: 0px;
+    }
+    .home-about-left button {
+        font-size: 20px;
+        margin-top: 20px;
+        font-size: 15px;
+    }
+    .about-me-extra img {
+        width: 50%;
+        animation: glitch 3s linear infinite;
+        border-radius: 20px;
+    }
+    .about-me-extra {
+        flex-direction: column-reverse;
+    }
+    .about-text-div p {
+        width: auto;
+        height: 250px;
+    }
+    .about-text-div h3 {
+        font-size: 10px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+    }
+    /* SKILLS */
+    .skills {
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-bottom: 200px;
+    }
+    .experienceDiv {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: auto;
+    }
+    .comments{
+        display: none;
+    }
+    
+    /* PROJECTS */
+    .home-projects{
+        margin-top: 650px;
+    }
+    .gitDiv{
+        flex-direction: column-reverse;
+    }
+    .gitDiv button {
+        font-size: 15px;
+    }
+    .sliderImg {
+        width: auto;
+        height: 350px;
+    }
+
+    footer{
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 50px;
+    }
+    footer div {
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .footerMessageDiv {
+        width: 100%;
+        text-align: center;
+    }
+    
+}

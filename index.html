@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portofolio</title>
+    <link rel="stylesheet" href="/Styles/styles.css">
+    <script src="/Java/exe.js"></script>
+
+</head>
+
+
+<body>
+    <header>
+        <div class="header-navi">
+            <div class="logo">
+                <a href="#main-section"><p>E<span>G</span>T</p></a>
+            </div>
+
+            <div class="header-links">
+                <a href="#about-section">About</a>
+                <a href="#skills-section">Skills</a>
+                <a href="#projects-section">Projects</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        
+        <video id="video-bg2" autoplay muted loop >
+            <source src="./assets/backgrounds/bgVideo2.mp4" type="video/mp4">
+        </video>
+        <div class="home-main" id="main-section">
+            <p class="home-main-p"><span>BEST</span> <span>Junior</span> Front-End Developer</p>
+            <p class="warning">!!EPILEPTIC WARNING!!</p>
+            <h1 class="home-main-title">Eduard <span>G.</span> Tudorache</h1>
+            <div>
+                <p>Experienced enough to open VS Code correctly...</p>
+                <p>Can count from 1 to 10 and maybe more...</p>
+            </div>
+            <button class="exploreBtn" id="exploreBtn">Explore</button>
+        </div>
+
+        <section class="home-about" id="about-section">
+
+            <div class="description">
+                <div class="home-about-left" id="home-about-left">
+                    <h2>About Me</h2>
+                    <div class="about-me-extra">
+                        <div class="extra-text">
+                            <p>Name: Eduard</p>
+                            <p>Age: 24</p>
+                            <p>Sex: M</p>
+                            <p>Race: Human</p>
+                        </div>
+                        <img class="profileImg" src="./assets/img/matrix-pic1.jpg" alt="">
+                    </div>
+
+                    <button class="downloadBtn">Classic CV</button>
+                </div>
+
+                <div class="home-about-right">
+                    <div class="about-text-div">
+                        
+                        <h3>↓ EXTRACTED CANDIDATE DATA ↓</h3>
+                        <p id="description-text">I'm Eduard, a motivated and detail-oriented junior front-end developer with a strong foundation in web development and a knack for tackling challenges.
+                                                    My background combines hands-on project experience, like creating dynamic, responsive web apps that integrate APIs, with a drive for constant improvement.
+                                                    I’ve successfully built a portfolio of functional and visually engaging projects, from SPA layouts with smooth navigation to interactive weather applications, 
+                                                    showcasing my focus on user experience and code efficiency.
+                                                    <br><br>
+                                                    I’m passionate about writing clean, efficient code that not only brings designs to life but also enhances the user’s journey across the site. 
+                                                    I believe that a great user experience is more than just visual appeal; it’s about creating seamless interactions that feel intuitive and enjoyable.
+                                                    <br><br>
+                                                    As I continue developing my skills, I’m particularly drawn to exploring new front-end frameworks, improving accessibility in web design, 
+                                                    and experimenting with animations that bring added depth to my projects. 
+                                                    My goal is to join a team where I can grow, collaborate on exciting projects, and contribute meaningful code that makes an impact.
+                        </p>
+                        <button class="easy-read" id="easy-read">Easy Read</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-skills" id="skills-section">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="experienceDiv" data-progress-end-value="92">
+                    <div class="circular-progress">
+                        <span><img class="progress-img" src="./assets/icons/htmlImg.png" alt=""></span>
+                    </div>
+                    <div>
+                        <span class="progress-text">HTML</span>
+                        <span class="progress-value">0%</span>
+                    </div>
+
+                    <div class="comments">
+                        <ul>
+                            <li>Knows how to change the title</li>
+                            <li>Knows what body is</li>
+                            <li>Knows how to type stuff</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experienceDiv" data-progress-end-value="88">
+                    <div class="circular-progress">
+                        <span><img class="progress-img" src="./assets/icons/css-3.png" alt=""></span>
+                    </div>
+                    <div>
+                        <span class="progress-text">CSS</span>
+                        <span class="progress-value">0%</span>
+                    </div>
+
+                    <div class="comments">
+                        <ul>
+                            <li>Knows how to change colors</li>
+                            <li>Knows what font is</li>
+                            <li>Knows how to use Display Flex</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experienceDiv" data-progress-end-value="75">
+                    <div class="circular-progress">
+                        <span><img class="progress-img" src="./assets/icons/Unofficial_JavaScript_logo_2.svg.png" alt=""></span>
+                    </div>
+                    <div>
+                        <span class="progress-text">JS</span>
+                        <span class="progress-value">0%</span>
+                    </div>
+
+                    <div class="comments">
+                        <ul>
+                            <li>Knows what a const is</li>
+                            <li>Knows how to use if/else</li>
+                            <li>Knows what an event listener is</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="experienceDiv" data-progress-end-value="70">
+                    <div class="circular-progress">
+                        <span><img class="progress-img" src="./assets/icons/reacticon.png" alt=""></span>
+                    </div>
+                    <div>
+                        <span class="progress-text">REACT</span>
+                        <span class="progress-value">0%</span>
+                    </div>
+
+                    <div class="comments">
+                        <ul>
+                            <li>Knows how to import</li>
+                            <li>Knows how to start react</li>
+                            <li>Knows how to make folders for react</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+
+        <section class="home-projects" id="projects-section">
+            <h2>Projects</h2>
+            <div class="projectsDiv">
+                <div class="projectLeft">
+                    <div class="screenDivCarousel">
+                        <img class="frameImg" src="./assets/img/crt-edge.png" alt="">
+                        <div class="slideshow-container">
+                            <div class="mySlides fade" data-description="Description for WeatherApp">
+                                <img class="sliderImg" src="./assets/img/WeatherApp.png">
+                            </div>
+                            <div class="mySlides fade" data-description="Description for SpaceProject">
+                                <img class="sliderImg" src="./assets/img/spaceProject.png">
+                            </div>
+                            <div class="mySlides fade" data-description="Description for React project.">
+                                <img class="sliderImg" src="./assets/img/miniApps.png">
+                            </div>
+                            
+                            <div class="sliderBtnDiv">
+                                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="projectRight">
+                    <div class="projectData">
+                        <div>
+                            <div id="project-name-text"></div>
+                        </div>
+                        <div class="project-text">
+                            <div class="about-text-div">
+                                <p id="project-description-text"></p>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="gitDiv">
+                        
+                        <a href="https://github.com/RedGhost15?tab=repositories"><button class="gitButton">GIT REPO</button></a>
+                        <button class="easy-read" id="project-easy-read">Easy Read</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <div class="footerMessageDiv">
+            <h3>If you got this far... 🤔</h3>
+            <p> Maybe you consider <span>HIRING</span> ME <span class="emojiSpan">(⊙_⊙)？</span></p>
+            <a href=""></a>
+        </div>
+        <div>
+            <h2>Quick Menu</h2>
+            <a href="#main-section">Back to the Top! </a>
+            <a href="#about-section">About</a>
+            <a href="#skills-section">Skills</a>
+            <a href="#projects-section">Projects</a>
+        </div>
+        <div>
+            <h2>Contacts / Connects</h2>
+            <div>
+                <div>
+                    <a href="https://www.linkedin.com/in/eduard-tudorache-7466ba2a9/"><img src="./assets/icons/linked.png" alt="linked in icon"></a>
+                    <a href="mailto:eduard.tudorache@gmail.com"><img src="./assets/icons/gamil.png" alt="gmail icon"></a>
+                </div>
+                <div><a href="https://github.com/RedGhost15?tab=repositories"><img src="./assets/icons/ghub.png" alt=" git-hub icon"></a>
+                    <a href="whatsapp://send?text=Hello World!&phone=+40735963980"><img src="./assets/icons/wapp.png" alt="whatsApp icon"></a></div>
+            </div>
+            
+        </div>
+    </footer>
+    
+
+</body>
+</html>
