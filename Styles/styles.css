@@ -24,6 +24,8 @@ body {
 main {
     text-align: center;
     padding: 30px;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 video {
     display: flex;
