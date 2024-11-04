@@ -407,7 +407,7 @@ header{
     justify-content: space-between;
 }
 .sliderImg{
-    width: 41%;
+    width: 60%;
     animation: glitch 3s linear infinite;
 }
 .slideshow-container {
