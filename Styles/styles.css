@@ -18,14 +18,10 @@ a {
 body {
     height: 100vh;
     width: auto;
-    overflow-y: scroll;
-    overflow-x: hidden;
 }
 main {
     text-align: center;
     padding: 30px;
-    overflow-y: scroll;
-    overflow-x: hidden;
 }
 video {
     display: flex;
