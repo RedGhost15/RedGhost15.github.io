@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eduard</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="https://kit.fontawesome.com/c139686304.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <!-- HEADER -->
+    <header class="header">
+        <div class="tabs-div">
+            <div class="menu-button">
+                <a href="#" id="menu-button">
+                    <img src="/assets/img/icons/Windows 95 ALL ICONS v1.1/All [Without duplicates]/Windows logo (without text).ico" alt=""><p>Menu</p>
+                </a>
+            </div>
+            <div class="app-div" id="welcome"><p>Welcome</p></div>
+            <div class="app-div" id="about"><p>About</p></div>
+            <div class="app-div" id="projects"><p>Projects</p></div>
+            <div class="app-div" id="cv"><p>CV</p></div>
+            <div class="app-div" id="project-presentation"><p>Details</p></div>
+        </div>
+        <div id="menu-tab" class="menu-tab hidden">
+            <div class="side-bar">
+                <p>Eduard's Portfolio</p>
+            </div>
+            <div class="tabs">
+                <div class="menu-div" id="menu-div-home">
+                    <div class="home-btn-command">
+                        <img src="/assets/img/icons/Windows 95 ALL ICONS v1.1/All [Without duplicates]/My Computer.ico" alt="">
+                        <p>Home</p>
+                    </div>
+                </div>
+                <div class="menu-div" id="menu-div-proj">
+                    <div>
+                        <img src="/assets/img/icons/Windows 95 ALL ICONS v1.1/All [Without duplicates]/Web-documents folder 2.ico" alt="">
+                        <p>Projects</p>
+                    </div>
+                    <div class="extended-menu-tab hidden-tabs" id="extended-menu-tab-proj">
+                        <div class="outsourcing-app">
+                            <img src="/assets/img/icons/Windows 95 ALL ICONS v1.1/All [Without duplicates]/Web-Document.ico" alt="">
+                            <p>Outsourcing</p>
+                        </div>
+                        <div class="pool-app">
+                            <img src="/assets/img/icons/Windows 95 ALL ICONS v1.1/All [Without duplicates]/Chemistry with phone.ico" alt="">
+                            <p>Pool cleaning</p>
+                        </div>
+                        <div class="space-app">
+                            <img src="/assets/img/icons/Windows 95 ALL ICONS v1.1/All [Without duplicates]/Earth (16 colors).ico" alt="">
+                            <p>Space Website</p>
+                        </div>
+                        <div class="weather-app">
+                            <img src="/assets/img/icons/Windows 95 ALL ICONS v1.1/All [Without duplicates]/Painting.ico" alt="">
+                            <p>Weather App</p>
+                        </div>
+                        <div class="mini-app-pack">
+                            <img src="/assets/img/icons/Windows 95 ALL ICONS v1.1/All [Without duplicates]/Diskettes.ico" alt="">
+                            <p>Mini Apps</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-div" id="menu-div-cv">
+                    <div>
+                        <img src="/assets/img/icons/Windows 95 ALL ICONS v1.1/All [Without duplicates]/Mail text.ico" alt="">
+                        <p>CV</p>
+                    </div>
+                    <div class="extended-menu-tab hidden-tabs" id="extended-menu-tab-cv">
+                        <img src="/assets/img/icons/Windows 95 ALL ICONS v1.1/All [Without duplicates]/Folder Transfer.ico" alt="">
+                        <a href="/assets/CV/EduardTudorache.pdf" download="EduardTudorache.pdf"><p>Download CV</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="headerName">
+            <div class="side-bar-two">
+                <p>Eduard's Portfolio</p>
+            </div>
+        </div>
+        <div class="main-date-div">
+            <div class="date-div">
+                <p id="date-time"></p>
+            </div>
+        </div>
+        
+    </header>
+    
+    
+
+    <!-- MAIN -->
+
+    <main>
+        <!-- HOME -->
+        <section class="welcome">
+            <div class="bar">
+                <div class="window-name">
+                    <p>Welcome</p>
+                </div>
+                <div class="bar-buttons">
+                    <div class="window-button" data-message="Why would you want to hide it?"><i class="fa-solid fa-window-minimize"></i></div>
+                    <div class="window-button" data-message="I think it's big enough!"><i class="fa-regular fa-window-maximize"></i></div>
+                    <div class="window-button" data-message="No, no... Don't press that!"><i class="fa-solid fa-xmark"></i></div>
+                </div>
+            </div>
+        
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="text-div">
+                            <h1>WELCOME</h1>
+                            <div class="social-box">
+                                <a href="https://www.linkedin.com/in/eduard-tudorache-7466ba2a9/"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="mailto:eduard.tudorache@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                                <a href="https://github.com/RedGhost15"><i class="fa-brands fa-github"></i></a>
+                                <a href="https://wa.me/+40735963980"><i class="fa-brands fa-whatsapp"></i></a>
+                            </div>
+                            <div class="text-box">
+                                <p>
+                                    Hi, my name is Eduard Gabriel Tudorache <u>(Eddie)</u>, and I’m passionate about creating visually stunning websites and applications that not only look great but also deliver a seamless and smooth user experience.
+                                </p>
+                            </div>
+                            <div class="seeMore-div">
+                                <button id="seeMore">See More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="monitor-div">
+                            <img src="/assets/img/bgImg/screen.png" alt="" class="monitor-img">
+                            <div class="slideshow-div">
+                                <img src="/assets/img/profileImg/miniApps.png" alt="Slideshow Image" id="slideshow" class="slideshow">
+                            </div>
+                            <div class="shadow"></div>
+                            <div class="shadow-two"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+        </section>
+        
+
+
+        <!-- ABOUT -->
+        <section class="about" id="about">
+            <div class="bar">
+                <div class="window-name">
+                    <p>About Me</p>
+                </div>
+                <div class="bar-buttons">
+                    <div class="window-button" data-message="Why would you want to hide it?"><i class="fa-solid fa-window-minimize"></i></div>
+                    <div class="window-button" data-message="I think it's big enough!"><i class="fa-regular fa-window-maximize"></i></div>
+                    <div class="window-button" data-message="No, no... Don't press that!"><i class="fa-solid fa-xmark"></i></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="about-div">
+                            <h1>About Me</h1>
+                            <div class="about-info">
+                                <div class="about-img">
+                                    <img src="/assets/img/profileImg/me.jpg" alt="" class="profile-img">
+                                </div>
+                                <div class="about-info-text">
+                                    <div>
+                                        <p>
+                                            I bring a strong foundation in front-end development, with expertise in building dynamic, user-friendly websites. My focus is on delivering high-quality, responsive designs that enhance user experience while meeting business objectives.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            I could be a great choice for your team because I am adaptable, eager to learn, and committed to achieving excellence in everything I do.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="about-info-text">
+                                <div>
+                                    <p> I thrive in problem-solving and have a keen eye for detail, making me effective at troubleshooting and refining code.</p>
+                                    <p>
+                                        Outside of work, I love coding and thinking about innovative designs and ways to improve existing ones. I enjoy building PCs, gaming, and hitting the gym, which helps me stay balanced and focused. These hobbies fuel my creativity and give me a fresh perspective when approaching challenges.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="skills-div">
+                            <h1>Skills</h1>
+                            <div class="skills-scrollable-div">
+                                <div class="in-skill-div">
+                                    <h3>Skills im confident about</h3>
+                                    <div class="experienceDiv" data-progress-end-value="80%">
+                                        <div class="circular-progress">
+                                            <span><img class="progress-img" src="./assets/icons/htmlImg.png" alt=""></span>
+                                        </div>
+                                        <div>
+                                            <span class="progress-text">HTML</span>
+                                            <span class="progress-value">0%</span>
+                                        </div>
+                                        <div>
+                                            <p>I use HTML to structure the content of a webpage. I make sure each part of a page has its place, from headings to paragraphs, making it easier to understand and navigate</p>
+                                        </div>
+                                    </div>
+                                    <div class="experienceDiv" data-progress-end-value="75">
+                                        <div class="circular-progress">
+                                            <span><img class="progress-img" src="assets/img/profileImg/" alt=""></span>
+                                        </div>
+                                        <div>
+                                            <span class="progress-text">CSS</span>
+                                            <span class="progress-value">0%</span>
+                                        </div>
+                                        <div>
+                                            <p>With CSS, I style and organize the look of a webpage. I focus on creating layouts that look good on different devices and try out things like colors and animations</p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="in-skill-div">
+                                    <h3>Skills I need to improve</h3>
+                                    <div class="experienceDiv" data-progress-end-value="50">
+                                        <div class="circular-progress">
+                                        </div>
+                                        <div>
+                                            <span class="progress-text">JS</span>
+                                            <span class="progress-value">0%</span>
+                                        </div>
+                                        <div>
+                                            <p>JavaScript helps me add interactive features to a page. I’m learning how to make buttons, forms, and other parts of the page respond to what users do, bringing everything to life</p>
+                                        </div>
+                                    </div>
+                                    <div class="experienceDiv" data-progress-end-value="40">
+                                        <div class="circular-progress">
+                                        </div>
+                                        <div>
+                                            <span class="progress-text">React</span>
+                                            <span class="progress-value">0%</span>
+                                        </div>
+                                        <div>
+                                            <p>React allows me to build complex interfaces in a simpler way. I’m learning how to use components to organize code and make websites that load fast and run smoothly</p>
+                                        </div>
+                                    </div>
+                                    <div class="experienceDiv" data-progress-end-value="50">
+                                        <div class="circular-progress">
+                                        </div>
+                                        <div>
+                                            <span class="progress-text">Angular</span>
+                                            <span class="progress-value">0%</span>
+                                        </div>
+                                        <div>
+                                            <p>Angular allows me to build dynamic interfaces with ease. I’m learning how to use components and services to organize code, ensuring websites are fast, responsive, and efficient.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="in-skill-div">
+                                    <h3>Back End Skills</h3>
+                                    <div class="experienceDiv" data-progress-end-value="30">
+                                        <div class="circular-progress">
+                                        </div>
+                                        <div>
+                                            <span class="progress-text">MONGO DB</span>
+                                            <span class="progress-value">30%</span>
+                                        </div>
+                                        <div>
+                                            <p>I have a basic understanding of MongoDB and its use in NoSQL databases. While I'm still building my expertise, I’m familiar with its core features and how to structure data effectively for modern applications.</p>
+                                        </div>
+                                    </div>
+                                    <div class="experienceDiv" data-progress-end-value="40">
+                                        <div class="circular-progress">
+                                        </div>
+                                        <div>
+                                            <span class="progress-text">SQL</span>
+                                            <span class="progress-value">40%</span>
+                                        </div>
+                                        <div>
+                                            <p>I have a foundational knowledge of SQL and how to query relational databases. I am continuing to improve my skills in writing complex queries and understanding database design principles.</p>
+                                        </div>
+                                    </div>
+                                    <div class="experienceDiv" data-progress-end-value="35">
+                                        <div class="circular-progress">
+                                        </div>
+                                        <div>
+                                            <span class="progress-text">Socket.IO</span>
+                                            <span class="progress-value">35%</span>
+                                        </div>
+                                        <div>
+                                            <p>I have a basic understanding of Socket.IO and its role in enabling real-time, bidirectional communication between web clients and servers. While still expanding my knowledge, I’m familiar with its usage in chat applications and live data updates.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="in-skill-div">
+                                    <h3>AI Skills</h3>
+                                    <div class="experienceDiv" data-progress-end-value="90">
+                                        <div class="circular-progress">
+                                        </div>
+                                        <div>
+                                            <span class="progress-text">Chat GPT</span>
+                                            <span class="progress-value">90%</span>
+                                        </div>
+                                        <div>
+                                            <p>Skilled in using AI to streamline corrections and boost efficiency, particularly for tasks that would otherwise take longer.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- PROJECTS -->
+        <section class="projects">
+            <div class="bar">
+                <div class="window-name">
+                    <p>Projects</p>
+                </div>
+                <div class="bar-buttons">
+                    <div class="window-button" data-message="Why would you want to hide it?"><i class="fa-solid fa-window-minimize"></i></div>
+                    <div class="window-button" data-message="I think it's big enough!"><i class="fa-regular fa-window-maximize"></i></div>
+                    <div class="window-button" data-message="No, no... Don't press that!"><i class="fa-solid fa-xmark"></i></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="carousel" id="carousel">
+                            <div class="item">
+                                <div class="bar">
+                                    <div class="window-name">
+                                        <p>Weather App</p>
+                                    </div>
+                                    <div class="bar-buttons">
+                                        <div class="window-button"><i class="fa-solid fa-window-minimize"></i></div>
+                                        <div class="window-button"><i class="fa-regular fa-window-maximize"></i></i></div>
+                                        <div class="window-button"><i class="fa-solid fa-xmark"></i></div>
+                                    </div>
+                                </div>
+                                <div class="item-info">
+                                    <h3>Weather App</h3>
+                                    <p>Simple yet styled weather app that will let you know how the weather is no matter what location youre looking for</p>
+                                    <img src="/assets/img/icons/WeatherApp.png" alt="">
+                                    <p>For more information go to:</p>
+                                    <p>Menu/Projects/WeatherApp or click <a class="weather-a" href="#">here</a></p>
+                                    <p>To acces git repo click <a href="https://github.com/RedGhost15?tab=stars">here</a></p>
+                                </div>
+                                
+                            </div>
+                            <div class="item">
+                                <div class="bar">
+                                    <div class="window-name">
+                                        <p>Space Tourism</p>
+                                    </div>
+                                    <div class="bar-buttons">
+                                        <div class="window-button"><i class="fa-solid fa-window-minimize"></i></div>
+                                        <div class="window-button"><i class="fa-regular fa-window-maximize"></i></i></div>
+                                        <div class="window-button"><i class="fa-solid fa-xmark"></i></div>
+                                    </div>
+                                </div>
+                                <div class="item-info">
+                                    <h3>Space Tourism Website</h3>
+                                    <p>My first "complex" website, presenting different planets, technology and the crew that operated in different missions</p>
+                                    <img src="/assets/img/icons/spaceProject.png" alt="">
+                                    <p>For more information go to:</p>
+                                    <p>Menu/Projects/Space Website or click <a class="space-a" href="#">here</a></p>
+                                    <p>To acces git repo click <a href="https://github.com/RedGhost15?tab=stars">here</a></p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="bar">
+                                    <div class="window-name">
+                                        <p>Outsourcing Website</p>
+                                    </div>
+                                    <div class="bar-buttons">
+                                        <div class="window-button"><i class="fa-solid fa-window-minimize"></i></div>
+                                        <div class="window-button"><i class="fa-regular fa-window-maximize"></i></i></div>
+                                        <div class="window-button"><i class="fa-solid fa-xmark"></i></div>
+                                    </div>
+                                </div>
+                                <div class="item-info">
+                                    <h3>Outsourcing Website</h3>
+                                    <p>Fully structured website, featuring clean, minimalist design with seamless functionality with a product catalog, email messaging system, and product checkout process.</p>
+                                    <img src="/assets/img/icons/outsource.png" alt="">
+                                    <p>For more information go to:</p>
+                                    <p>Menu/Projects/LandingPage or click <a class="outsource-a" href="#">here</a></p>
+                                    <p>To acces git repo click <a href="https://github.com/RedGhost15?tab=stars">here</a></p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="bar">
+                                    <div class="window-name">
+                                        <p>Pool Cleaning</p>
+                                    </div>
+                                    <div class="bar-buttons">
+                                        <div class="window-button"><i class="fa-solid fa-window-minimize"></i></div>
+                                        <div class="window-button"><i class="fa-regular fa-window-maximize"></i></i></div>
+                                        <div class="window-button"><i class="fa-solid fa-xmark"></i></div>
+                                    </div>
+                                </div>
+                                <div class="item-info">
+                                    <h3>Pool Cleaning Service</h3>
+                                    <p>An actual "Live" project, for a local business that, you guessed it, takes care of pool cleaning</p>
+                                    <img src="/assets/img/icons/poolProject.png" alt="">
+                                    <p>For more information go to:</p>
+                                    <p>Menu/Projects/PoolCleaning or click <a class="pool-a" href="#">here</a></p>
+                                    <p>To acces git repo click <a href="https://github.com/RedGhost15?tab=stars">here</a></p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="bar">
+                                    <div class="window-name">
+                                        <p>Mini Apps</p>
+                                    </div>
+                                    <div class="bar-buttons">
+                                        <div class="window-button"><i class="fa-solid fa-window-minimize"></i></div>
+                                        <div class="window-button"><i class="fa-regular fa-window-maximize"></i></i></div>
+                                        <div class="window-button"><i class="fa-solid fa-xmark"></i></div>
+                                    </div>
+                                </div>
+                                <div class="item-info">
+                                    <h3>Multiple Mini Apps</h3>
+                                    <p>A pcak of Mini Apps such as: a TODO App, Random Advice Generator, Age Calculator and an Aim Trainer</p>
+                                    <img src="/assets/img/icons/miniApps.png" alt="">
+                                    <p>For more information go to:</p>
+                                    <p> Menu/Projects/MiniApps or click <a class="mini-a" href="#">here</a></p>
+                                    <p>To acces git repo click <a href="https://github.com/RedGhost15?tab=stars">here</a></p>
+                                </div>
+                            </div>
+                            
+                            
+                            
+                        </div>
+                        <div class="controls">
+                            <input type="radio" name="carousel" class="carousel-input" id="carousel1">
+                            <label for="carousel1"></label>
+                        
+                            <input type="radio" name="carousel" class="carousel-input" id="carousel2">
+                            <label for="carousel2"></label>
+                        
+                            <input type="radio" name="carousel" class="carousel-input" id="carousel3">
+                            <label for="carousel3"></label>
+                        
+                            <input type="radio" name="carousel" class="carousel-input" id="carousel4">
+                            <label for="carousel4"></label>
+                        
+                            <input type="radio" name="carousel" class="carousel-input" id="carousel5">
+                            <label for="carousel5"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CV -->
+        <section class="cv">
+            <div class="bar">
+                <div class="window-name">
+                    <p>CV</p>
+                </div>
+                <div class="bar-buttons">
+                    <div class="window-button" data-message="Why would you want to hide it?"><i class="fa-solid fa-window-minimize"></i></div>
+                    <div class="window-button" data-message="I think it's big enough!"><i class="fa-regular fa-window-maximize"></i></div>
+                    <div class="window-button" data-message="No, no... Don't press that!"><i class="fa-solid fa-xmark"></i></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="cv-container">
+                            <div class="cv-header">
+                                <h1>Eduard Gabriel Tudorache</h1>
+                                <p>Front-End Developer | Creative Thinker | Problem Solver</p>
+                            </div>
+            
+                            <div class="cv-section">
+                                <h2>Contact Information</h2>
+                                <ul>
+                                    <li>Address: Târgoviște, Dâmbovița, Romania</li>
+                                    <li>Email: eduard.tudorache@gmail.com</li>
+                                    <li>Phone: +40 0735963980</li>
+                                    <li>LinkedIn: <a href="https://www.linkedin.com/in/eduard-tudorache-7466ba2a9/">linkedin.com/in/eduard-tudorache</a></li>
+                                </ul>
+                            </div>
+            
+                            <div class="cv-section">
+                                <h2>Summary</h2>
+                                <p>
+                                    Detail-oriented professional with expertise in administrative procedures and project coordination, known for strong planning and organizational skills that drive timely and successful project delivery. Proficient in front-end web development, with a focus on creating intuitive, user-centric designs and seamless digital experiences. Skilled in leveraging modern web technologies such as JavaScript, HTML, CSS, Angular, and Socket.io to develop responsive and interactive applications. Passionate about merging technical proficiency with creative problem-solving to deliver impactful results in dynamic environments.
+                                </p>
+                            </div>
+            
+                            <div class="cv-section">
+                                <h2>Work Experience</h2>
+                                <div class="experience-item">
+                                    <h3>Team Leader</h3>
+                                    <p>Amazon | Tilbury, United Kingdom | Sep 2020 - Aug 2023</p>
+                                    <p>
+                                        I led project coordination efforts, ensuring timely delivery of initiatives while reducing
+                                        staff turnover through an effective motivation strategy. I successfully translated
+                                        senior management directives into actionable front-line policies, implementing
+                                        changes with staff to enhance efficiency. Additionally, I investigated issues affecting
+                                        group operations, prepared detailed reports, and contributed to resolving problems
+                                        to improve overall performance.
+                                    </p>
+                                </div>
+                                <div class="experience-item">
+                                    <h3>Front-End Developer Intern</h3>
+                                    <p>Amazon | Romania | Oct 2024 - Jan 2025</p>
+                                    <p>
+                                        Gained hands-on experience in the IT industry through the Skilbrain course,
+                                        developing practical skills in [specific areas, e.g., software development, network
+                                        administration, data analysis]. Contributed to real-world projects, enhancing
+                                        technical proficiency and problem-solving abilities while applying theoretical
+                                        knowledge in a professional setting.
+                                    </p>
+                                </div>
+
+                            </div>
+            
+                            <div class="cv-section">
+                                <h2>Education</h2>
+                                
+                                <div class="education-item">
+                                    <h3>The Warren School</h3>
+                                    <p>Sixth-Form(Robotic/Structural Engineering) | United Kingdom</p>
+                                </div>
+                                <div class="education-item">
+                                    <h3>The London College</h3>
+                                    <p>Civil Engineering | United Kingdom</p>
+                                </div>
+                                <div class="education-item">
+                                    <h3>Junior Front-End Developer</h3>
+                                    <p>Skillbrain | Romania </p>
+                                </div>
+                            </div>
+            
+                            <div class="cv-section">
+                                <h2>Skills</h2>
+                                    <h3>Technical Skills</h3>
+                                    <ul>
+                                        <li>HTML5</li>
+                                        <li>CSS3</li>
+                                        <li>JavaScript</li>
+                                        <li>React</li>
+                                        <li>Angular</li>
+                                        <li>Git & GitHub</li>
+                                        <li>Responsive Design</li>
+                                    </ul>
+
+
+                                    <h3>Soft Skills</h3>
+                                    <ul>
+                                        <li><strong>Empathy and Emotional Intelligence:</strong> Understanding and connecting with others on an emotional level.</li>
+                                        <li><strong>Resilience and Adaptability:</strong> Thriving in challenging environments and adapting quickly to new situations.</li>
+                                        <li><strong>Creativity and Problem-Solving:</strong> Finding innovative solutions to complex problems in coding and beyond.</li>
+                                        <li><strong>Goal-Oriented and Ambitious:</strong> Working strategically and consistently toward long-term objectives.</li>
+                                        <li><strong>Communication and Teamwork:</strong> Expressing ideas clearly and collaborating effectively with others.</li>
+                                        <li><strong>Time Management and Work Ethic:</strong> Balancing responsibilities efficiently while maintaining diligence and consistency.</li>
+                                        <li><strong>Introspection and Self-Improvement:</strong> Reflecting on growth and actively working to enhance skills and character.</li>
+                                    </ul>
+                            </div>
+
+                            <div class="cv-section">
+                                <p>To download pdf version of the CV go to Menu / CV / Download CV or click <a href="/assets/CV/EduardTudorache.pdf" download="EduardTudorache.pdf">here</a></p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-presentation">
+            <div class="bar">
+                <div class="window-name">
+                    <p>Details</p>
+                </div>
+                <div class="bar-buttons">
+                    <div class="window-button" data-message="Why would you want to hide it?"><i class="fa-solid fa-window-minimize"></i></div>
+                    <div class="window-button" data-message="I think it's big enough!"><i class="fa-regular fa-window-maximize"></i></div>
+                    <div class="window-button" data-message="No, no... Don't press that!"><i class="fa-solid fa-xmark"></i></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="project-btns-tab">
+                        <button data-id="outsourcing" class="active">Outsourcing</button>
+                        <button data-id="pool-cleaning">Pool Cleaning</button>
+                        <button data-id="space-tourism">Space Tourism</button>
+                        <button data-id="weather-app">Weather App</button>
+                        <button data-id="mini-apps">Mini Apps</button>
+                    </div>
+                    <div class="col">
+                        <div class="projects-details-div">
+                            <h1 id="project-title">Project Title</h1>
+
+                            <div class="project-description">
+                                <div>
+                                    <h2>Project Description</h2>
+                                    <p id="project-description"></p>
+                                </div>
+                                <div class="projImgDiv">
+                                    <div class="bar">
+                                        <div class="window-name">
+                                            <p>Projects.png</p>
+                                        </div>
+                                        <div class="bar-buttons">
+                                            <div class="window-button" data-message="Why would you want to hide it?"><i class="fa-solid fa-window-minimize"></i></div>
+                                            <div class="window-button" data-message="I think it's big enough!"><i class="fa-regular fa-window-maximize"></i></div>
+                                            <div class="window-button" data-message="No, no... Don't press that!"><i class="fa-solid fa-xmark"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="projImg">
+                                        <img id="project-image" src="" alt="Project Screenshot">
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="project-why">
+
+                                <div class="projImgDiv">
+                                    <div class="bar">
+                                        <div class="window-name">
+                                            <p>Projects.png</p>
+                                        </div>
+                                        <div class="bar-buttons">
+                                            <div class="window-button" data-message="Why would you want to hide it?"><i class="fa-solid fa-window-minimize"></i></div>
+                                            <div class="window-button" data-message="I think it's big enough!"><i class="fa-regular fa-window-maximize"></i></div>
+                                            <div class="window-button" data-message="No, no... Don't press that!"><i class="fa-solid fa-xmark"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="projImg">
+                                        <img id="project-pic-why" src="" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <h2>Why I Built This Project</h2>
+                                    <p id="project-why"></p>
+                                </div>
+                            </div>
+
+                            <div class="project-difficulties">
+                                <div>
+                                    <h2>Difficulties Encountered</h2>
+                                    <p id="project-difficulties"></p>
+                                </div>
+                                <div class="projImgDiv">
+                                    <div class="bar">
+                                        <div class="window-name">
+                                            <p>Projects.png</p>
+                                        </div>
+                                        <div class="bar-buttons">
+                                            <div class="window-button" ><i class="fa-solid fa-window-minimize"></i></div>
+                                            <div class="window-button" ><i class="fa-regular fa-window-maximize"></i></div>
+                                            <div class="window-button" ><i class="fa-solid fa-xmark"></i></div>
+                                        </div>
+                                    </div>
+                                    <div class="projImg">
+                                        <img id="project-diff-img" src="" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+            
+
+                            <div class="project-learned">
+                                <div>
+                                    <h2>What I Learned</h2>
+                                    <p id="project-learned"></p>
+                                    <span><p>To acces git repo click <a href="https://github.com/RedGhost15?tab=stars">here</a></p></span>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+                    <!-- Popup for tab buttons / minimise/ maximise and close -->
+            <div id="popup" class="popup hidden">
+                <div class="bar">
+                <div class="window-name">
+                    <p>Error!!!</p>
+                </div>
+                <button id="popup-close-btn"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <div class="popup-div-content">
+                    <div class="popup-content">
+                        <img src="/assets/img/icons/Windows 95 ALL ICONS v1.1/All [Without duplicates]/Warning.ico" alt="">
+                        <p id="popup-message"></p>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+
+
+
+
+    <script src="exe.js"></script>
+</body>
+</html>
