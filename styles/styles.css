@@ -1098,7 +1098,7 @@ input:nth-of-type(5):checked ~ .carousel {
         object-fit: cover;
         position: absolute;
         z-index: 10;
-        top: -55px;
+        top: -105px;
         left: 40px;
         width: 220px;
         height: auto;
@@ -1108,7 +1108,7 @@ input:nth-of-type(5):checked ~ .carousel {
     }
     .monitor-img {
         width: 300px;
-        top: -95px;
+        top: -145px;
         left: 0px;
     }
     .shadow,.shadow-two{
