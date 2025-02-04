@@ -1544,7 +1544,198 @@ input:nth-of-type(5):checked ~ .carousel {
 }
 
 /* Extra-extra-large devices (1200px and up) */
-@media only screen and (min-width: 1200px) {
+/* HIGH RES SCREENS */
+@media only screen and (min-width: 1200px) and (max-width: 3840px) {
+    section {
+        margin-top: 10px;
+        width: 90%;
+        overflow: hidden;
+        
+    }
+    /* welcome */
+    .welcome .container {
+        height: 94%;
+        width: 99.4%;
+        margin: 10px 4px 10px 4px;
+        padding: 0px 50px;
+    }
+    .slideshow-div img {
+        object-fit: cover;
+        position: absolute;
+        z-index: 10;
+        top: 35px;
+        left: 60px;
+        width: 500px;
+        height: auto;
+    }
+    .monitor-img {
+        width: 600px;
+    }
+    .shadow,.shadow-two{
+        display: none;
+    }
+    .welcome .col .text-div h1 {
+        font-size: 60px;
+    }
+    .welcome .col .text-box p {
+        font-size: 25px;
+    }
+    /* about me */
+    .about .container{
+        height: 94%;
+        width: 99.4%;
+        margin: 10px 4px 10px 4px;
+        padding: 0px 10px;
+    }
+    .about .row {
+        height: 95%;
+        width: 100%;
+        padding: 0px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-bottom: 10px;
+        gap: 10px;
+    }
+    .about .row .col {
+        width: 100%;
+        padding-top: 30px;
+    }
+    .about .about-div {
+        padding: 0px 80px;
+        max-width: 1500px;
+    }
+    .about-div h1 {
+        padding-bottom: 20px;
+    }
+    .about-info {
+        gap: 20px;
+    }
+    .about-info div:nth-child(2) {
+        max-width: unset;
+    }
+    .about-info-text div p {
+        font-size: 30px;
+        font-weight: 100;
+        letter-spacing: 1.5px;
+        line-height: 22px;
+        text-align: left;
+    }
+    .skills-scrollable-div {
+        width: 1400px;
+        height: 850px;
+    }
+    .experienceDiv {
+        width: 800px;
+        height: 150px;
+    }
+    .experienceDiv div:nth-child(3) p{
+        font-size: 20px;
+    }
+    .about .col .skills-div h1 {
+        padding-bottom: 50px;
+    }
+    /* projects */
+    .projects .container{
+        height: 94%;
+        width: 99.4%;
+        margin: 10px 4px 10px 4px;
+    }
+    .projects .row {
+        width: 100%;
+        height: 100%;
+    }
+    .projects .carousel {
+        perspective: 800px;
+    }
+    .projects .carousel .item {
+        width: 590px;
+        height: 760px;
+        padding: 5px 5px;
+        transform: rotateY(calc(-11deg * var(--r))) translateX(calc(-540px * var(--r)));
+    }
+    .projects .carousel .item .item-info {
+        align-items: center;
+    }
+    .item img {
+        margin-top: 15px;
+        width: 270px;
+    }
+    .item .bar .window-name p {
+        font-size: 20px;
+    }
+    html body main section.projects div.container div.row div.col div.controls label {
+        width: 30px;
+        height: 30px;
+    }
+
+    /* cv */
+    .cv .container{
+        height: 94%;
+        width: 99.4%;
+        margin: 10px 4px 10px 4px;
+    }
+    .cv .row {
+        width: 100%;
+        height: 100%;
+    }
+    .cv-header h1 {
+        font-size: 60px;
+        padding-bottom: 20px;
+    }
+    .controls label{
+        width: 30px;
+        height: 30px;
+    }
+    /* details */
+    .project-presentation .container{
+        height: 94%;
+        width: 99.4%;
+        margin: 10px 4px 10px 4px;
+    }
+    .projects-details-div{
+        width: 100%;
+        height: 100%;
+    }
+    .project-presentation .row {
+        width: 100%;
+        height: 100%;
+    }
+    .project-description, .project-why, .project-difficulties {
+        width: 1050px;
+    }
+    .project-description .projImgDiv .projImg img, .project-why .projImgDiv .projImg img, .project-difficulties .projImgDiv .projImg img {
+        width: 380px;
+    }
+    .project-description .projImgDiv, .project-why .projImgDiv, .project-difficulties .projImgDiv {
+        height: 400px;
+        height: auto;
+    }
+    .project-description div p, .project-why div p, .project-difficulties div p, .project-learned div p {
+        font-size: 20px;
+    }
+    .project-description div h2, .project-why div h2, .project-difficulties div h2, .project-learned div h2 {
+        font-size: 55px;
+    }
+    /* menu */
+    .menu-tab {
+        bottom: 223px;
+        left: -1452px;
+        width: 448px;
+        height: 400px;
+    }
+
+    .menu-div {
+        width: 400px;
+        height: 50px;
+    }
+    #extended-menu-tab-proj {
+        left: 248px;
+    }
+    #extended-menu-tab-cv {
+        left: 308px;
+    }
     .headerName{
         display: none;
     }
