@@ -1545,7 +1545,7 @@ input:nth-of-type(5):checked ~ .carousel {
 
 /* Extra-extra-large devices (1200px and up) */
 /* HIGH RES SCREENS */
-@media only screen and (min-width: 1200px) and (max-width: 3840px) {
+@media only screen and (min-width: 1921px) and (max-width: 3840px) {
     section {
         margin-top: 10px;
         width: 90%;
